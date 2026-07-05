@@ -1,6 +1,5 @@
 # ⚡ RAG Q&A Engine
-
-> Real-time Retrieval-Augmented Generation system built with Python-style TF vectorization, cosine similarity retrieval, and Claude LLM.
+> Real-time Retrieval-Augmented Generation system built with TF-IDF vectorization, cosine similarity retrieval, and the Claude API.
 
 **Built by K B Renuka** | B.Tech CSE (AI & ML) | IBM AI & Cloud Intern
 
@@ -12,17 +11,17 @@ RAG (Retrieval-Augmented Generation) is the architecture behind most production 
 
 1. **Retrieves** relevant documents using vector similarity
 2. **Augments** the prompt with that context
-3. **Generates** a grounded, accurate answer
+3. **Generates** a grounded, accurate answer, with citations back to source
 
 ---
 
 ## 🚀 Features
 
-- 📄 Knowledge base with multiple documents
-- 🔍 TF vectorization + cosine similarity retrieval
-- 🤖 Claude LLM for answer generation
-- 💡 Visual pipeline — see which docs get retrieved live
-- ⚡ Zero hallucination — answers only from context
+- 📄 Knowledge base with multiple documents — add your own on the fly
+- 🔍 TF-IDF vectorization + cosine similarity retrieval, computed live in the browser
+- 🤖 Optional Claude LLM generation — works with or without an API key
+- 🔗 Clickable inline citations — jump straight to the source excerpt
+- ⚡ Zero hallucination — answers grounded only in retrieved context
 
 ---
 
@@ -30,18 +29,22 @@ RAG (Retrieval-Augmented Generation) is the architecture behind most production 
 
 | Layer | Technology |
 |-------|-----------|
-| Retrieval | TF Vectors + Cosine Similarity |
-| Generation | Claude API (Anthropic) |
-| Frontend | React |
-| Language | JavaScript / Python concepts |
+| Retrieval | TF-IDF Vectors + Cosine Similarity (vanilla JavaScript) |
+| Generation | Claude API (Anthropic) — optional, bring your own key |
+| Frontend | React (via CDN, no build step) |
 
 ---
 
 ## 📸 How to Run
 
-1. Clone this repo
-2. Open `rag_qa_engine.jsx` in a React environment
-3. Ask questions — watch the RAG pipeline work live
+No installation or build step required.
+
+1. Clone this repo, or just download `index.html`
+2. Open `index.html` directly in any browser
+3. Ask a question about the sample document, or add your own
+4. *(Optional)* Paste your own Anthropic API key to get a full generated answer instead of the raw retrieved passage
+
+**Try it live:** [add your Netlify link here]
 
 ---
 
