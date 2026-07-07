@@ -21,7 +21,7 @@ RAG (Retrieval-Augmented Generation) is the architecture behind most production 
 - 🔍 TF-IDF vectorization + cosine similarity retrieval, computed live in the browser
 - 🤖 Optional Claude LLM generation — works with or without an API key
 - 🔗 Clickable inline citations — jump straight to the source excerpt
-- ⚡ Zero hallucination — answers grounded only in retrieved context
+- ⚡ Grounded answers — responses cite retrieved context to minimize hallucination
 
 ---
 
@@ -44,7 +44,7 @@ No installation or build step required.
 3. Ask a question about the sample document, or add your own
 4. *(Optional)* Paste your own Anthropic API key to get a full generated answer instead of the raw retrieved passage
 
-**Try it live:** [add your Netlify link here]
+**Try it live:** [kb-renuka-rag-engine.netlify.app]
 
 ---
 
